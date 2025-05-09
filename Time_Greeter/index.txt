@@ -1,0 +1,11 @@
+Objective: Create a webpage that displays a greeting ("Good Morning," "Good Afternoon," or "Good Evening") based on the current time of day.
+
+<script src="index.js"></script>: Placed at the end of <body> so the HTML elements (like greetingDisplay) are loaded and available when the script runs.
+In some cases we use DomContentLoaded
+
+Revision :
+
+Learnt about css js connection
+DomContentLoaded and using ES6 heavy code from now, for example i did not use if-else for conditions , i used ternary operator ?:  , this avoided using let {can be reassigned}, and i used only const variables making code robust.
+
+Though for simple use case like this if-else is fine , or readability reduces.
