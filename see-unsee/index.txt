@@ -1,0 +1,15 @@
+learnt about showing or hiding paragraph using .is-hidden class
+
+this .is-hidden class is not used in html, its simply used on css
+
+.is-hidden{
+display:none;
+}
+
+now we dynamically catch a element from html and just
+
+add or remove this class to it :
+
+element.classlist.toggle('is-hidden')  this adds or removes based on toggle
+
+
