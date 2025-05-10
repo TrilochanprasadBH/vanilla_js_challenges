@@ -1,0 +1,18 @@
+Create a counter with increment, decrement, reset buttons and handle the count state.
+Learn about event listener onClick, DomContentLoaded etc
+
+id and class both can be given to same element , based on need apply them
+
+using transform: translateY(1px) etc to make button visually appear to be clicked when clicked. nice
+
+Need to learn about :
+
+1.dynamic css changes through js , adding class , id, class list , styling in js dynamically
+2. decrementButton.disabled = true;
+3.decrementButton.classList.add('disabled');
+
+
+Feedback on js code by gemini 2.5pro
+
+1. You're using alert() for feedback. This is okay for simple examples, but for more polished applications, you might consider non-blocking UI messages.
+

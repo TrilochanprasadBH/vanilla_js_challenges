@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.counter-container{
+    padding: 20px;
+}
+
+#displayCount{
+    color: firebrick;
+}
+
+.btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+#incrementBtn{
+    background-color: lightgreen;
+    color: white;
+}
+#incrementBtn:hover{
+    background-color: green;
+}
+#decrementBtn:hover{
+    background-color: red;
+}
+#decrementBtn{
+    background-color: lightcoral;
+    color: white;
+}
+#resetBtn{
+    background-color: lightgrey;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#resetBtn:hover{
+    background-color: black;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.btn-reset:active{
+    transform: translateY(2px);
+}
