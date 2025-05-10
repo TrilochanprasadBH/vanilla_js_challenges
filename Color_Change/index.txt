@@ -1,0 +1,7 @@
+Color change , here we learnt logic
+
+generating color using 16777215, we get hex
+there are other methods where we generate rgb
+or generate hex by running loop etc
+
+transform translate is nice
