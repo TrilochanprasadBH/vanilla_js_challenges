@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#gallery-image-live{
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
