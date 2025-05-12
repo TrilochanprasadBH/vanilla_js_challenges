@@ -1,0 +1,8 @@
+Revised how label and input are used together.
+label is used with for attributed to show who's label it is. for is assigned same value
+as id of input. Good for accessibility
+
+learnt input event.  using event.target.value.
+
+for onClick/click event, we dont pass event in callback , but for input event we do pass and then use it too as given above.
+
