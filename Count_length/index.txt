@@ -1,0 +1,4 @@
+1.Learnt usage of textarea
+2.applied DRY principle and updated js code
+3.re learnt importance of having a function to do logic things in it while we also call it at beginning of page load to set initial values to 0 etc.
+4. thought process
