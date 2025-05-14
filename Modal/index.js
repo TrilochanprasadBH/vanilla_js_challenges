@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalOverlay.addEventListener('click', (e)=>{
         console.log(e.target);
+
+        // this is important, only when mouse is over modaloverlay it closes , outside it doesnt
         if(e.target === modalOverlay){
             modalOverlay.classList.add('hidden');
         }
