@@ -1,0 +1,16 @@
+Learning about having :
+    1.dynamic content in modals
+    2. focus - concept
+    3. some css for such conditions
+    4. keyboard accessibility - tabindex -1, tabindex 0 ,
+    5. .focus()
+
+point 1 2,4, being very informative and good learning curve.
+see how keydown event listener is used.
+ observe how e.key for 'Tab' and e.key for 'Escape' is used and e.shiftKey is used directly for shiftkey . refer mdn for these
+
+This was quite a learning.
+
+
+in element selection , it need not always be document.getEle etc
+if we have a element ,div , say divModal , we can use divModal.querySelectorAll to get hold of all child elements inside that div.
