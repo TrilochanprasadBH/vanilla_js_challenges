@@ -8,3 +8,32 @@ solution : in script tag src was index.css instead of index.js. so. learn more o
 Loved how i learnt using .focus() option here. if input box is empty ,on click , focus happens!
 after i click on button , i ahve to empty the input box, here i used : inputValue.value = ''; this works  ,
 no need to calling event listener again.
+
+
+On AI code review by gpt4.1,i got feedback that :
+1.not to use globaltodo  usetodo from target value for better safety
+2.also to use trim() to remove any whitespace issue coming up
+3. allow use of enter key , for better UX
+
+
+Learnt: types of key events : IMPORTANT
+
+keydown - fires when key is pressed down  : used for shortcups, enter key , prevent Default ,immediate.
+keyup - fires when key user stops typing  : used to check after typing / stopping actions, etc
+input - fires as input value changes  : used to get live text as user types
+key press - no more in use
+
+
+
+Also, note on getting value from inputs :
+
+input.addEventListener('input', (e) => {
+  console.log(e.target.value); // The current value of the input
+});    ---->This is especially useful if you have multiple inputs and use the same handler for all.
+
+
+const input = document.getElementById('input-field');
+addBtn.addEventListener('click', () => {
+  console.log(input.value); // The current value of the input
+}); -------> This is simple and direct, especially if you’re only dealing with ONE input.
+

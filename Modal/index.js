@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modalOverlay.classList.add('hidden');
     })
 
+
+
     modalOverlay.addEventListener('click', (e)=>{
         console.log(e.target);
 
