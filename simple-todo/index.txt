@@ -1,0 +1,10 @@
+Got this error in console :
+
+Refused to execute script from 'http://localhost:63342/vanilla_js_challenges/simple-todo/index.css' because its MIME type ('text/css') is not executable, and strict MIME type checking is enabled.
+
+solution : in script tag src was index.css instead of index.js. so. learn more on mime type later.
+
+
+Loved how i learnt using .focus() option here. if input box is empty ,on click , focus happens!
+after i click on button , i ahve to empty the input box, here i used : inputValue.value = ''; this works  ,
+no need to calling event listener again.

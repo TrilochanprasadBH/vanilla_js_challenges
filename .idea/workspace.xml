@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad90d3aa-41d2-4888-a6c2-776a417f324d" name="Changes" comment="Learnt a lot. Done.Redo this again.">
+      <change beforePath="$PROJECT_DIR$/Modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Modal/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TrilochanprasadBH&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TrilochanprasadBH/vanilla_js_challenges.git&quot;,
+    &quot;accountId&quot;: &quot;bb8b5265-a65a-4513-be14-6a4d8d9febb7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2wrGaSbUxLAfubA0LexBSZlOwJj" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad90d3aa-41d2-4888-a6c2-776a417f324d" name="Changes" comment="" />
+      <created>1746792343226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746792343226</updated>
+      <workItem from="1746792344442" duration="368000" />
+      <workItem from="1746792741641" duration="41325000" />
+      <workItem from="1747117819090" duration="7374000" />
+      <workItem from="1747193434226" duration="30178000" />
+    </task>
+    <task id="LOCAL-00001" summary="added initial project folders: 1.counter">
+      <option name="closed" value="true" />
+      <created>1746792503903</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746792503903</updated>
+    </task>
+    <task id="LOCAL-00002" summary="counter project begins">
+      <option name="closed" value="true" />
+      <created>1746793054572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746793054572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Done with Dynamic greeting project">
+      <option name="closed" value="true" />
+      <created>1746805751303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746805751303</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done with Dynamic greeting project">
+      <option name="closed" value="true" />
+      <created>1746805837021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746805837021</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed .idea folder">
+      <option name="closed" value="true" />
+      <created>1746805891806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746805891807</updated>
+    </task>
+    <task id="LOCAL-00006" summary="counter app completed">
+      <option name="closed" value="true" />
+      <created>1746872782674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746872782674</updated>
+    </task>
+    <task id="LOCAL-00007" summary="color change app completed">
+      <option name="closed" value="true" />
+      <created>1746887160105</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746887160105</updated>
+    </task>
+    <task id="LOCAL-00008" summary="toggle class list is-hidden learned: completed">
+      <option name="closed" value="true" />
+      <created>1746890525585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746890525585</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completed. Learnt input event etc">
+      <option name="closed" value="true" />
+      <created>1747038602900</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747038602900</updated>
+    </task>
+    <task id="LOCAL-00010" summary="completed :using index for gallery:img,srcAttribute">
+      <option name="closed" value="true" />
+      <created>1747052013114</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747052013114</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Heavy learning : completed. check index.txt">
+      <option name="closed" value="true" />
+      <created>1747147092397</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747147092397</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Learnt textarea,DRY etc">
+      <option name="closed" value="true" />
+      <created>1747196808431</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747196808431</updated>
+    </task>
+    <task id="LOCAL-00013" summary="modal , basic done. part-1">
+      <option name="closed" value="true" />
+      <created>1747226588246</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747226588246</updated>
+    </task>
+    <task id="LOCAL-00014" summary="modal learning about overlay:done">
+      <option name="closed" value="true" />
+      <created>1747232567217</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747232567217</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Learnt a lot. Done.Redo this again.">
+      <option name="closed" value="true" />
+      <created>1747330919965</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747330919965</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added initial project folders: 1.counter" />
+    <MESSAGE value="counter project begins" />
+    <MESSAGE value="Done with Dynamic greeting project" />
+    <MESSAGE value="removed .idea folder" />
+    <MESSAGE value="counter app completed" />
+    <MESSAGE value="color change app completed" />
+    <MESSAGE value="toggle class list is-hidden learned: completed" />
+    <MESSAGE value="completed. Learnt input event etc" />
+    <MESSAGE value="completed :using index for gallery:img,srcAttribute" />
+    <MESSAGE value="Heavy learning : completed. check index.txt" />
+    <MESSAGE value="Learnt textarea,DRY etc" />
+    <MESSAGE value="modal , basic done. part-1" />
+    <MESSAGE value="modal learning about overlay:done" />
+    <MESSAGE value="Learnt a lot. Done.Redo this again." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learnt a lot. Done.Redo this again." />
+  </component>
+</project>
