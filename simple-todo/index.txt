@@ -37,3 +37,6 @@ addBtn.addEventListener('click', () => {
   console.log(input.value); // The current value of the input
 }); -------> This is simple and direct, especially if you’re only dealing with ONE input.
 
+
+createTextNode() vs createElement()
+this creates only text no html.  this creates html element.
