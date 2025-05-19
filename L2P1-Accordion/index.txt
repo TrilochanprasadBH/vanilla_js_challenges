@@ -1,1 +1,8 @@
-this.classlist .add or .remove or .contains or .toggle
+Learning why i made choices i made in code:
+
+1. this.classlist .add or .remove or .contains or .toggle
+
+2. in css for accordion content we use maxHeight :0 and overflow:hidden, we do not use display :none,
+because display none, does not help us in having smooth transition effect, as it removes element from dom, but maxHeight :0 and overflow:hidden, keeps element, ie technically it's there but not visible, now this allows us to apply transition effects better
+
+3. see how 'this' is used in this js logic, such a nice real example.

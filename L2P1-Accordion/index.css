@@ -1,0 +1,18 @@
+.container{
+    background-color: lightgrey;
+}
+.accordion{
+    border: 1px solid black;
+}
+
+.accordion-item{
+    border: 1px solid green;
+}
+.accordion-header{
+    color: green;
+}
+.accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
