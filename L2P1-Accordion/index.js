@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ContentPanelId = this.getAttribute('aria-controls');
                 const contentPanel = document.getElementById(ContentPanelId);
 
-
             })
         })
 })
