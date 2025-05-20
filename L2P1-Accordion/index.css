@@ -1,18 +1,77 @@
 .container{
     background-color: lightgrey;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 }
-.accordion{
-    border: 1px solid black;
+#heading{
+    text-align: center;
 }
 
 .accordion-item{
-    border: 1px solid green;
+    border: 1px solid orange;
 }
-.accordion-header{
-    color: green;
-}
+
 .accordion-content{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    transition: background-color 0.6s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover,
+.accordion-header.active {
+    background-color: lightpink;
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(45deg); /* Changes + to an x-like shape */
+}
+
+.accordion-icon {
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    padding: 0 18px; /* No top/bottom padding when collapsed */
+    background-color: white;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
+/* When the content is active/shown */
+.accordion-content.active {
+    /*id this being used in code, no i think*/
+    /* max-height will be set by JS for dynamic height */
+    /* padding: 15px 18px; /* Add padding back when open */
+    /* We'll handle padding transition slightly differently with max-height */
 }
