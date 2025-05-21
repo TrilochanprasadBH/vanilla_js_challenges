@@ -1,0 +1,19 @@
+.is-hidden{
+    display: none ;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+.container{
+    margin: 20px;
+    text-align: center;
+}
+
+.tab-container{
+    margin-bottom: 100px;
+}
+
+

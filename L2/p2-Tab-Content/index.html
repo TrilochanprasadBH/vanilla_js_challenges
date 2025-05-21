@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Content</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Tab Content</h1>
+<div class="container">
+    <div class="tab-container" aria-label="All Tab Controls">
+        <button class="tab-button" id="speed-tab" aria-controls="speed-content" aria-label="speed-tab">Speed</button>
+        <button class="tab-button" id="reliability-tab" aria-controls="accuracy-content" aria-label="reliability-tab">
+            Reliability
+        </button>
+        <button class="tab-button" id="accuracy-tab" aria-controls="reliability-content" aria-label="accuracy-tab">
+            Accuracy
+        </button>
+    </div>
+    <div class="tab-content-container" aria-label="All Tab Content">
+        <div id="speed-content">
+            Speed content
+        </div>
+        <div class="is-hidden" id="accuracy-content">
+            Accuracy content
+        </div>
+        <div class="is-hidden" id="reliability-content">
+            Reliability content
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="index.js"></script>
