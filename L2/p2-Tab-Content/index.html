@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,66 @@
 <body>
 <h1>Tab Content</h1>
 <div class="container">
-    <div class="tab-container" aria-label="All Tab Controls">
-        <button class="tab-button" id="speed-tab" aria-controls="speed-content" aria-label="speed-tab">Speed</button>
-        <button class="tab-button" id="reliability-tab" aria-controls="reliability-content"
-                aria-label="reliability-tab">
+    <!-- MODIFICATION: Added role="tablist" to the container -->
+    <div class="tab-container" aria-label="All Tab Controls" role="tablist">
+        <!-- MODIFICATION: Added class="active", aria-selected="true", tabindex="0" to the first tab -->
+        <button
+                class="tab-button active"
+                id="speed-tab"
+                aria-controls="speed-content"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+        >
+            Speed
+        </button>
+        <!-- MODIFICATION: Added aria-selected="false", tabindex="-1" to other tabs -->
+        <button
+                class="tab-button"
+                id="reliability-tab"
+                aria-controls="reliability-content"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+        >
             Reliability
         </button>
-        <button class="tab-button" id="accuracy-tab" aria-controls="accuracy-content" aria-label="accuracy-tab">
+        <button
+                class="tab-button"
+                id="accuracy-tab"
+                aria-controls="accuracy-content"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+        >
             Accuracy
         </button>
     </div>
     <div class="tab-content-container" aria-label="All Tab Content">
-        <div id="speed-content">
+        <!-- MODIFICATION: Added role="tabpanel" and aria-labelledby -->
+        <div id="speed-content" role="tabpanel" aria-labelledby="speed-tab">
             Speed content
         </div>
-        <div class="is-hidden" id="accuracy-content">
+        <!-- MODIFICATION: Added role="tabpanel" and aria-labelledby -->
+        <div
+                class="is-hidden"
+                id="accuracy-content"
+                role="tabpanel"
+                aria-labelledby="accuracy-tab"
+        >
             Accuracy content
         </div>
-        <div class="is-hidden" id="reliability-content">
+        <!-- MODIFICATION: Added role="tabpanel" and aria-labelledby -->
+        <div
+                class="is-hidden"
+                id="reliability-content"
+                role="tabpanel"
+                aria-labelledby="reliability-tab"
+        >
             Reliability content
         </div>
     </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
-<script src="index.js"></script>
