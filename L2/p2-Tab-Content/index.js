@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabContainer = document.querySelector('.tab-container'); // Get the tablist container
     const allTabs = Array.from(document.querySelectorAll('.tab-button')); // Convert NodeList to Array
-    const allPanels = Array.from(document.querySelectorAll('[role="tabpanel"]')); // Get all panels
+    // const allPanels = Array.from(document.querySelectorAll('[role="tabpanel"]')); // Get all panels
 
-    //  MODIFIED CLICK HANDLING FOR ACTIVE STATE & ARIA
+    //  MODIFIED CLICK HANDLING FOR ACTIVE STATE & ARIA..
     allTabs.forEach((clickedTab) => {
         clickedTab.addEventListener('click', function () {
             // Deactivate all other tabs and hide their panels

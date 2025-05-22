@@ -12,6 +12,7 @@ h1 {
     text-align: center;
 }
 
+
 .tab-container {
     margin-bottom: 20px; /* Reduced margin for better visual */
     /* ADDED: Flex display for better tab layout if needed */

@@ -3,7 +3,7 @@ LOT OF LEARNING
 1. accessibility / aria and navigation :
 
 role
-aria label - this overrides the text in tag , dont use on buttons etc
+aria label  - this overrides the text in tag , dont use on buttons etc
 aria controls and
 aria-labelledby   [see how button and corresponding content is related through id, and these 2 for ease of connection]
 aria-selected (true or false)  
