@@ -1,59 +1,80 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('todo-input');
-    const addBtn = document.getElementById('add-todo');
-    const todoList = document.querySelector('.todo-list-container');
-    console.log(todoList)
-    const initialMessage = 'There are on todos!';
+document.addEventListener('DOMContentLoaded', function () {
+    const newTaskInput = document.getElementById('newTaskInput');
+    const addTaskBtn = document.getElementById('addTaskBtn');
+    const taskList = document.getElementById('taskList');
 
-    const addTodo = () => {
-        const value = input.value;
-        // console.log(value);
-        if (!value) {
-            input.focus();
+    // Function to add a new task
+    function addTask() {
+        const taskText = newTaskInput.value.trim(); // Get text and remove whitespace
+
+        if (taskText === '') {
+            alert('Please enter a task!'); // Simple validation
             return;
         }
-        const p = document.createElement('p');
-        p.innerText = value;
 
+        // Create new list item (li)
+        const listItem = document.createElement('li');
+        listItem.classList.add('task-item');
+
+        // Create checkbox
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
+        checkbox.classList.add('task-checkbox');
 
-        const delBtn = document.createElement('button');
-        delBtn.innerText = 'Delete';
-        delBtn.style.color = 'grey';
-        todoList.appendChild(p);
-        todoList.appendChild(checkbox);
-        todoList.appendChild(delBtn);
-        input.value = '';
-        input.focus();
+        // Create span for task text
+        const textSpan = document.createElement('span');
+        textSpan.classList.add('task-text');
+        textSpan.textContent = taskText;
+
+        // Create delete button
+        const deleteBtn = document.createElement('button');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.textContent = 'Delete';
+
+        // Append elements to the list item
+        listItem.appendChild(checkbox);
+        listItem.appendChild(textSpan);
+        listItem.appendChild(deleteBtn);
+
+        // Append list item to the task list
+        taskList.appendChild(listItem);
+
+        // Clear the input field
+        newTaskInput.value = '';
+        newTaskInput.focus(); // Put focus back to input for easy next entry
     }
 
-    addBtn.addEventListener('click', addTodo);
-    input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            addTodo();
+    // Event listener for the "Add Task" button
+    addTaskBtn.addEventListener('click', addTask);
+
+    // Event listener for pressing "Enter" in the input field
+    newTaskInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            addTask();
         }
-    })
+    });
 
-    const deleteTodo = () => {
-        todoList.removeChild(p);
-    }
+    // Event listener for task list (for completing and deleting tasks - Event Delegation)
+    taskList.addEventListener('click', function (event) {
+        const targetElement = event.target;
 
-    const checkTodo = (e) => {
-        const isChecked = e.target.checked;
-        if(isChecked){
-            p.style.textDecoration = 'line-through';
-        }else{
-            p.style.textDecoration = 'none';
+        // Check if a delete button was clicked
+        if (targetElement.classList.contains('delete-btn')) {
+            const listItem = targetElement.closest('.task-item'); // Find parent li
+            if (listItem) {
+                taskList.removeChild(listItem);
+            }
         }
-    }
+    });
 
-    todoList.addEventListener('click', (e) => {
-        if(e.target.tagName === 'BUTTON'){
-           deleteTodo()
+    taskList.addEventListener('change', function(event) {
+        const targetElement = event.target;
+        // Check if a checkbox was changed
+        if (targetElement.type === 'checkbox' && targetElement.classList.contains('task-checkbox')) {
+            const listItem = targetElement.closest('.task-item'); // Find parent li
+            if (listItem) {
+                listItem.classList.toggle('completed');
+            }
         }
-    })
-
-    todoList.addEventListener('change', checkTodo);
-
-})
+    });
+});
