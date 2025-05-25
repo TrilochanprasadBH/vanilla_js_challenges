@@ -1,3 +1,31 @@
-.todo-create-container{
-    margin: 20px;
+/* ... your other CSS ... ask ai to comment on this file, learn from it  */
+
+.todo-list {
+    margin-top: 20px;
+    list-style-type: none; /* Good to add to remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.todo-item {
+    display: flex;
+    align-items: center; /* Vertically align items in the task row */
+    gap: 10px;
+    /* row-gap: 10px; /* row-gap is for grid/flex containers with wrapping, gap is sufficient here */
+    padding: 8px 0; /* Add some padding for better spacing */
+    border-bottom: 1px solid #eee; /* Visual separator for tasks */
+}
+
+.todo-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+/* THIS IS THE CORRECTED SELECTOR */
+.todo-item.completed .task-text  {
+    text-decoration: line-through;
+    color: #888; /* Optional: change color too */
+}
+
+/* Optional: Add some margin to the checkbox for better spacing if 'gap' isn't enough or for older browsers */
+.checkbox {
+    margin-right: 5px;
 }

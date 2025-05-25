@@ -1,80 +1,63 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const newTaskInput = document.getElementById('newTaskInput');
-    const addTaskBtn = document.getElementById('addTaskBtn');
-    const taskList = document.getElementById('taskList');
+document.addEventListener('DOMContentLoaded', () => {
+    const inputText = document.getElementById('todo-input');
+    const addBtn = document.getElementById('todo-button');
+    const showTodo = document.querySelector('.todo-list');
 
-    // Function to add a new task
-    function addTask() {
-        const taskText = newTaskInput.value.trim(); // Get text and remove whitespace
+    const addTodo = () => {
+        const todoValue = inputText.value.trim();
 
-        if (taskText === '') {
-            alert('Please enter a task!'); // Simple validation
+        if (!todoValue) {
+            inputText.focus();
             return;
         }
+        const li = document.createElement('li');
+        li.classList.add('todo-item');
 
-        // Create new list item (li)
-        const listItem = document.createElement('li');
-        listItem.classList.add('task-item');
+        const inputBox = document.createElement('input');
+        inputBox.type = 'checkbox';
+        inputBox.classList.add('checkbox');
 
-        // Create checkbox
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.classList.add('task-checkbox');
+        const span = document.createElement('span');
+        span.innerText = todoValue;
+        span.classList.add('task-text');
 
-        // Create span for task text
-        const textSpan = document.createElement('span');
-        textSpan.classList.add('task-text');
-        textSpan.textContent = taskText;
-
-        // Create delete button
         const deleteBtn = document.createElement('button');
+        deleteBtn.innerText = 'Delete';
         deleteBtn.classList.add('delete-btn');
-        deleteBtn.textContent = 'Delete';
 
-        // Append elements to the list item
-        listItem.appendChild(checkbox);
-        listItem.appendChild(textSpan);
-        listItem.appendChild(deleteBtn);
-
-        // Append list item to the task list
-        taskList.appendChild(listItem);
-
-        // Clear the input field
-        newTaskInput.value = '';
-        newTaskInput.focus(); // Put focus back to input for easy next entry
+        li.appendChild(inputBox);
+        li.appendChild(span);
+        li.appendChild(deleteBtn);
+        showTodo.appendChild(li);
+        inputText.value = '';
+        inputText.focus();
     }
 
-    // Event listener for the "Add Task" button
-    addTaskBtn.addEventListener('click', addTask);
-
-    // Event listener for pressing "Enter" in the input field
-    newTaskInput.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
-            addTask();
+    addBtn.addEventListener('click', addTodo);
+    inputText.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            addTodo();
         }
-    });
+    })
 
-    // Event listener for task list (for completing and deleting tasks - Event Delegation)
-    taskList.addEventListener('click', function (event) {
-        const targetElement = event.target;
+    // check box and delete button events are necessary.  now structure is clear - <li><checkbox> <span> <delete></li> like this
+    //so those 3 are children of li. any event on them , we will make change to parent li.
+    //also observe how we are adding event listener to parent of li , on ul. we need not have event listener on all li , its bad idea.
 
-        // Check if a delete button was clicked
-        if (targetElement.classList.contains('delete-btn')) {
-            const listItem = targetElement.closest('.task-item'); // Find parent li
-            if (listItem) {
-                taskList.removeChild(listItem);
-            }
+    showTodo.addEventListener('click', (e) => {
+        const target = e.target;
+        if(target.classList.contains('delete-btn')){
+            target.parentElement.remove();
+            // showTodo.removeChild(target.parentElement);
         }
-    });
+    })
 
-    taskList.addEventListener('change', function(event) {
-        const targetElement = event.target;
-        // Check if a checkbox was changed
-        if (targetElement.type === 'checkbox' && targetElement.classList.contains('task-checkbox')) {
-            const listItem = targetElement.closest('.task-item'); // Find parent li
-            if (listItem) {
-                listItem.classList.toggle('completed');
-            }
+    showTodo.addEventListener('change', (e) => {
+        const target = e.target;
+        if( target.type === 'checkbox' && target.classList.contains('checkbox')){
+            target.parentElement.classList.toggle('completed')
         }
-    });
-});
+    })
+
+
+})

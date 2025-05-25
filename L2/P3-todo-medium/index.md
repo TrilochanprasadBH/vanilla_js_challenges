@@ -12,3 +12,11 @@ When clicked on delete button , identify its parent, ie li and remove that li fr
 
 Event Delegation: For handling clicks on dynamically added "Delete" buttons and "Complete" checkboxes, attaching a single event listener to the parent taskList is much more efficient than adding listeners to every new item. We then check event.target to see what was actually clicked.
 
+
+-----///------
+
+1.adding multiple classes to same element use case -->  .todo-item.completed etc 
+2.event delegation  
+3.how i used event listener on parent ul once, and not for all li 
+4.how when childeren on li , the span checkbox and button are under some event like click or change, then we can use event delegation and not use event listener on each child element, and make change on parent ie li element. VERY IMPORTANT POINT 
+5.using focus, blur, keydown, keyup, keypress , strike through using css learnt  
