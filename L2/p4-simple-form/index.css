@@ -1,11 +1,94 @@
-#form{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    border: 1px solid black;
-    background-color: #f7f9fa;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-#form input{
-    padding: 5px;
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Styling for invalid inputs based on JS or HTML5 validation */
+.form-group input.invalid,
+.form-group input:invalid:not(:placeholder-shown):not(:focus) { /* HTML5 default invalid style (optional) */
+    border-color: #dc3545; /* Red for error */
+}
+.form-group input.valid {
+    border-color: #28a745; /* Green for success */
+}
+
+
+.error-message {
+    display: block; /* Make it take its own line */
+    color: #dc3545; /* Red */
+    font-size: 0.875em;
+    margin-top: 5px;
+    min-height: 1.2em; /* Reserve space to prevent layout shifts */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    color: #28a745; /* Green */
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
 }

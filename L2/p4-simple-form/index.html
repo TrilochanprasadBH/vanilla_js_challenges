@@ -1,27 +1,74 @@
-<!doctype html>
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <title>Simple Form</title>-->
+<!--    <link rel="stylesheet" href="index.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Simple Form</h1>-->
+<!--<div class="container">-->
+<!--    <form id="form">-->
+<!--        <label for="name">Name:</label>-->
+<!--        <input type="text" id="name" placeholder="Enter your name">-->
+<!--        <label for="email">Email:</label>-->
+<!--        <input type="email" id="email" placeholder="Enter your email">-->
+<!--        <label for="password">Password:</label>-->
+<!--        <input type="password" id="password" placeholder="Enter your password">-->
+<!--        <label for="confirm-password">Confirm Password</label>-->
+<!--        <input type="password" id="confirm-password" placeholder="Confirm your password">-->
+<!--        <label for="message">Message:</label>-->
+<!--        <textarea id="message" placeholder="Enter your message" rows=2 maxlength="100"></textarea>-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!--<script src="index.js"></script>-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fortress Validator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Simple Form</h1>
 <div class="container">
-    <form id="form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email">
-        <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" placeholder="Confirm your password">
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Enter your message" rows=2 maxlength="100"></textarea>
-        <button type="submit">Submit</button>
+    <h1>Register Your Account 🛡️</h1>
+    <form id="registrationForm" novalidate>
+        <!-- novalidate attribute prevents default browser validation popups,
+             allowing our custom messages to take precedence. -->
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5" />
+            <small class="error-message" id="usernameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" />
+            <small class="error-message" id="passwordError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required />
+            <small class="error-message" id="confirmPasswordError"></small>
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
     </form>
+    <p id="successMessage" class="success-message"></p>
 </div>
 </body>
 </html>
