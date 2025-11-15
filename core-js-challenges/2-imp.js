@@ -1,4 +1,6 @@
 // 2.Add async pieces (setTimeout, Promise) to show how the event loop re-enters the stack.
+//Study this code understand why.  Its important.
+//promises are microtasks and setTimeout/setInterval/ i/o  are macrotasks
 
 console.log("Start");
 
